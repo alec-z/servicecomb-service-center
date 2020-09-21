@@ -39,7 +39,6 @@
         </td>
       </ng-container>
 
-      <!-- Name Column -->
       <ng-container matColumnDef="id">
         <th class="employee-table__table-header" mat-header-cell *matHeaderCellDef>Instance Id</th>
         <td class="employee-table__table-body" mat-cell *matCellDef="let element"> {{element.instanceId}} </td>
@@ -47,8 +46,12 @@
 
       <ng-container matColumnDef="serviceName">
         <th class="employee-table__table-header" mat-header-cell *matHeaderCellDef>Service</th>
-        <td class="employee-table__table-body" mat-cell *matCellDef="let element"> {{element.service.serviceName}}
-          - {{element.service.version}} </td>
+        <td class="employee-table__table-body" mat-cell *matCellDef="let element"> {{element.service.serviceName}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="serviceVersion">
+        <th class="employee-table__table-header" mat-header-cell *matHeaderCellDef>Version</th>
+        <td class="employee-table__table-body" mat-cell *matCellDef="let element"> {{element.service.version}} </td>
       </ng-container>
 
       <ng-container matColumnDef="host">

@@ -42,11 +42,17 @@
         </td>
       </ng-container>
 
-      <!-- Name Column -->
       <ng-container matColumnDef="name">
         <th class="employee-table__table-header" mat-header-cell *matHeaderCellDef>Service Name</th>
         <td class="employee-table__table-body" mat-cell *matCellDef="let element">
-          {{element.serviceName}} - {{element.version}}
+          {{element.serviceName}}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="version">
+        <th class="employee-table__table-header" mat-header-cell *matHeaderCellDef>Version</th>
+        <td class="employee-table__table-body" mat-cell *matCellDef="let element">
+          {{element.version}}
         </td>
       </ng-container>
 

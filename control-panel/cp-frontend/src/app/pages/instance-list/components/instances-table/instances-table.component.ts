@@ -30,7 +30,7 @@ import {InstanceModel} from '../../../../models/instance.model';
 })
 export class InstancesTableComponent implements OnInit, OnChanges {
   @Input() instancesTableData$: Observable<InstanceModel[]>;
-  public displayedColumns: string[] = ['select', 'id', 'serviceName', 'host', 'endPoint', 'kieConf', 'status'];
+  public displayedColumns: string[] = ['select', 'id', 'serviceName', 'serviceVersion', 'host', 'endPoint', 'kieConf', 'status'];
   public dataSource: MatTableDataSource<InstanceModel> = new MatTableDataSource<InstanceModel>([]);
   public selection = new SelectionModel<InstanceModel>(true, []);
 

@@ -30,7 +30,7 @@ import {Observable} from 'rxjs';
 })
 export class ServicesTableComponent implements OnInit, OnChanges {
   @Input() servicesTableData$: Observable<ServiceModel[]>;
-  public displayedColumns: string[] = ['select', 'name', 'consumers', 'instances', 'relative', 'providers', 'kie'];
+  public displayedColumns: string[] = ['select', 'name', 'version', 'consumers', 'instances', 'relative', 'providers', 'kie'];
   public dataSource: MatTableDataSource<ServiceModel> = new MatTableDataSource<ServiceModel>([]);
   public selection = new SelectionModel<ServiceModel>(true, []);
 
